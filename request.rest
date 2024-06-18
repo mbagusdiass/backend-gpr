@@ -1,0 +1,61 @@
+GET http://localhost:8080/api/packages
+Accept: application/json
+
+
+###
+GET http://localhost:8080/api/packages/7
+Accept: application/json
+
+
+###
+POST http://localhost:8080/api/packages
+Content-Type: application/json
+
+{
+  "senderName": "John Doe",
+  "senderAddress": "123 Sender St",
+  "receiverName": "Jane Doe",
+  "receiverAddress": "456 Receiver St",
+  "ekspedisiId": 1,
+  "status": "Dikirim"
+}
+
+
+###
+PUT http://localhost:8080/api/packages/12
+Content-Type: application/json
+
+{
+  "senderName": "John Doe Updated",
+  "senderAddress": "123 Sender St Updated",
+  "receiverName": "Jane Doe Updated",
+  "receiverAddress": "456 Receiver St Updated",
+  "ekspedisiId": 1,
+  "status": "Dalam Perjalanan"
+}
+
+
+###
+DELETE http://localhost:8080/api/packages/8
+
+
+
+
+### 
+GET http://localhost:8080/api/report?ekspedisiId=2&startDate=2021-01-01&endDate=2025-12-31
+Accept: application/json
+
+
+###
+POST http://localhost:8080/api/ekspedisi
+Content-Type: application/json
+
+{
+  "name": "Ninja_Express"
+}
+
+
+###
+
+GET http://localhost:8080/api/ekspedisi
+Accept: application/json
