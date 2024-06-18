@@ -1,8 +1,8 @@
 module.exports = {
-    HOST: "localhost",
-    USER: "root",
-    PASSWORD: "",
-    DB: "gapura_packages",
+    HOST: "bsl7xxbjuq4oappwt9g2-mysql.services.clever-cloud.com",
+    USER: "ucjydkhg9l1ugdhh",
+    PASSWORD: "bkFDXDSd5V7eVo0u2zqV",
+    DB: "bsl7xxbjuq4oappwt9g2",
     dialect: "mysql",
     pool: {
       max: 5,
