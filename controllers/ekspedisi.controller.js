@@ -18,3 +18,12 @@ exports.findAll = async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 };
+
+exports.delete = async (req, res) => {
+  try {
+    await Ekspedisi.destroy({ where: { id: req.params.id } });
+    res.json({ message: 'Ekspedisi deleted' });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};

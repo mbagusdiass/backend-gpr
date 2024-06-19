@@ -8,7 +8,7 @@ Accept: application/json
 
 
 ###
-POST http://localhost:8080/api/packages
+POST backend-gpr.up.railway.app/api/packages
 Content-Type: application/json
 
 {
@@ -17,7 +17,7 @@ Content-Type: application/json
   "receiverName": "Jane Doe",
   "receiverAddress": "456 Receiver St",
   "ekspedisiId": 1,
-  "status": "Dikirim"
+  "status": "pending"
 }
 
 
@@ -47,11 +47,11 @@ Accept: application/json
 
 
 ###
-POST http://localhost:8080/api/ekspedisi
+POST backend-gpr.up.railway.app/api/ekspedisi
 Content-Type: application/json
 
 {
-  "name": "Ninja_Express"
+  "name": "JNE"
 }
 
 
